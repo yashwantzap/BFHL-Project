@@ -22,7 +22,7 @@ function App() {
 
       const payload = Array.isArray(parsed) ? { data: parsed } : parsed;
 
-      const res = await fetch("http://127.0.0.1:8000/bfhl", {
+      const res = await fetch("https://BFHL-Project-Yashwant.onrender.com/bfhl", { ... }), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
